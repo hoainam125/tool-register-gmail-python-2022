@@ -33,9 +33,8 @@ def get_code(id):
         time.sleep(2)
         return get_code(id)
 
-
-if __name__ == '__main__':
-    # #
+def reg_account():
+        # #
     # create data
     REG_LINK = 'https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp'
     driver.get(REG_LINK)
@@ -107,3 +106,9 @@ if __name__ == '__main__':
     acc_in4 = str('\n' + user_name + '@gmail.com' + '\t' + password + '\t' + phone_number[1] + '\t')
     file_object.write(acc_in4)
     print(acc_in4)
+if __name__ == '__main__':
+
+    number_account = int(input('Number of account: ')
+    for i in range(number_account):
+        reg_account()
+   
