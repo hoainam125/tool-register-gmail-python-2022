@@ -108,7 +108,7 @@ def reg_account():
     print(acc_in4)
 if __name__ == '__main__':
 
-    number_account = int(input('Number of account: ')
+    number_account = int(input('Number of account: '))
     for i in range(number_account):
         reg_account()
    
