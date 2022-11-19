@@ -37,7 +37,7 @@ def get_code(id):
 if __name__ == '__main__':
     # #
     # create data
-    REG_LINK = 'https:/accounts/google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp'
+    REG_LINK = 'https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp'
     driver.get(REG_LINK)
     last_name = random.choice(open('names.txt').read().splitlines())
     first_name = random.choice(open('names.txt').read().splitlines())
